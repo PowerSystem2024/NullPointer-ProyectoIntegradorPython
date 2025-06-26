@@ -26,7 +26,7 @@ Cloná el repositorio:
 bash
 Copiar
 Editar
-git clone https://github.com/GimenezCristian/juego-ahorcado-python.git
+git clone https://github.com/NullPointer/juego-ahorcado-python.git
 cd juego-ahorcado-python
 Ejecutá el juego desde la terminal:
 
