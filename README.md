@@ -68,7 +68,7 @@ Desarrollado por el grupo Null Pointer como parte del proyecto integrador del se
 
 
 🎓 Contexto
-Proyecto realizado en el marco de la materia Programador de Aplicaciones Móviles, como ejercicio práctico de desarrollo en Python y fundamentos de programación.
+Proyecto realizado en el marco de la materia Programación, como ejercicio práctico de desarrollo en Python.
 
 📝 Licencia
 Este proyecto puede ser utilizado y modificado con fines educativos. Se agradece el reconocimiento al grupo desarrollador.
