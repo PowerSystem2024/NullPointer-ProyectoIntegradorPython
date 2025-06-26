@@ -61,3 +61,24 @@ def guardar_resultado(palabra, resultado, intentos_restantes):
     """, (palabra, resultado, intentos_restantes))
     conn.commit()
     conn.close()
+
+# 🎮 Mostrar tablero
+def mostrar_tablero(palabra_secreta, letras_adivinadas):
+    tablero = ""
+    for letra in palabra_secreta:
+        if letra in letras_adivinadas:
+            tablero += letra
+        else:
+            tablero += "_"
+    print(tablero)
+
+# 🧠 Lógica principal del juego
+def jugar_ahorcado():
+    inicializar_base_datos()
+    palabra_secreta = obtener_palabra_aleatoria()
+    letras_adivinadas = []
+    intentos_restantes = 6
+
+    while intentos_restantes > 0:
+        mostrar_tablero(palabra_secreta, letras_adivinadas)
+        letra = input("Introduce una letra: ").lower()
