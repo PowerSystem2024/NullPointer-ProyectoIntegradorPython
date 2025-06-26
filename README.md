@@ -63,7 +63,7 @@ Intentos restantes: 4
         |
   =========
 ✍️ Autores
-Desarrollado por el grupo Null Pointer como parte del proyecto integrador del segundo cuatrimestre 2024 en el Instituto Superior Politécnico Córdoba.
+Desarrollado por el grupo Null Pointer como parte del proyecto integrador del segundo semestre de la Tecnicatura universitaria Programacion UTN
 
 
 
