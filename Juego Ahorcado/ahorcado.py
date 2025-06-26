@@ -42,3 +42,22 @@ def inicializar_base_datos():
 
     conn.commit()
     conn.close()
+
+def obtener_palabra_aleatoria():
+    conn = obtener_conexion()
+    cursor = conn.cursor()
+    cursor.execute("SELECT palabra FROM palabras ORDER BY RANDOM() LIMIT 1")
+    palabra = cursor.fetchone()[0]
+    conn.close()
+    return palabra
+
+# 💾 Guardar resultado de la partida
+def guardar_resultado(palabra, resultado, intentos_restantes):
+    conn = obtener_conexion()
+    cursor = conn.cursor()
+    cursor.execute("""
+        INSERT INTO historial (palabra, resultado, intentos_restantes)
+        VALUES (%s, %s, %s)
+    """, (palabra, resultado, intentos_restantes))
+    conn.commit()
+    conn.close()
